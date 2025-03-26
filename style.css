@@ -11,7 +11,8 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 100%;
+	width: 100%;
+	height: 100vh;
 	position: relative;
 	box-shadow: 0 5px 25px rgba(0 0 0 / 10%);
 	background-color: #ee0b0b00;
@@ -365,6 +366,7 @@ button:hover{
 	align-items: center;
 	margin-top:20px ;
 	border: none;
+	margin-top: 0.5rem;
 }
 
 .music-all-list{
@@ -400,8 +402,8 @@ select{
 	color: #000000;
 }
 select:hover{
-	background-color:#ecd107;
-	color: #000000;
+	background-color:#000000;
+	color: #ffffff;
 }
 .music-all-list::placeholder{
 	font-size: 20px;
@@ -421,15 +423,40 @@ select:hover{
 	width: 300px;
 	height: 200px;
 	padding: 10px;
-	background:url(/imges/beacch.jpeg);
-	background-position: center;
-	background-size: cover;
 	margin: 5px;
 	border-radius: 5px;
 	flex-wrap: wrap;
 	display: flex;
 	
 }
+.song-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: rgba(36, 161, 159, 0.7);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.song-item:hover {
+    transform: scale(1.05);
+}
+
+.song-thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.main-div-container {
+    padding: 20px;
+    transition: background 0.5s ease-in-out;
+}
+
 
 #name{
 	color: white;
