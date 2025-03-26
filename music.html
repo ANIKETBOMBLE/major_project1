@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IT+Moderna&display=swap" rel="stylesheet">
+<body> 
+	<aside>
+		<nav class="nav">
+			<img src="/imges/logo.svg" alt="">
+			<a href="/index.html"><i class="fas fa-home nav-icon"> </i> <span>Home</span></a>
+			<a href="/music.html"><i class="fas fa-music nav-icon"></i><span>music</span></a>
+			<a href="/scene.html"><i class="fas fa-mountain nav-icon"></i><span>Scene</span></a>
+			
+			<a href="/Breathe.html"><i class="fas fa-heartbeat nav-icon"></i><span>Relax & Breathe</span></a>
+			<a href="/talk.html"><i class="fas fa-comments nav-icon"></i><span>Talk To Hope</span></a>
+		</nav>
+	</aside>
+	<main>
+		<section class="main">
+			<div class="music-all-list">
+				<h1 class="">Music</h1>
+				<div class="drop-downlist">
+					<select id="musicCategory">
+						<option value="all" selected disabled>All</option>
+						<option value="nature">Nature</option>
+						<option value="silent">Silent</option>
+						<option value="mountain">Mountain</option>
+						<option value="water">Water</option>
+					</select>
+				</div>
+			</div>
+		</section>
+		
+		<section class="main-div-container">
+			<div class="div-container">
+				<div class="try"></div> <!-- Songs will be added here -->
+			</div>
+		</section>	
+	</main>
+	<script src="/music.js"></script>
+</body>
+</html>
