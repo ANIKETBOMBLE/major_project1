@@ -20,7 +20,6 @@ const songs = {
         { name: "Mountain Breeze", src: "audios/mountain_breeze.mp3", img: "music-imgs/8.webp" },
         { name: "Cave Ambience", src: "audios/cave_ambience.mp3", img: "music-imgs/9.webp" },
 		{ name: "Echoing Peaks", src: "audios/echoing_peaks.mp3", img: "music-imgs/7.jpeg" },
-        { name: "Mountain Breeze", src: "audios/mountain_breeze.mp3", img: "music-imgs/8.webp" },
         { name: "Cave Ambience", src: "audios/cave_ambience.mp3", img: "music-imgs/9.webp" }
     ],
     water: [
