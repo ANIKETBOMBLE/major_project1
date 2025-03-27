@@ -93,7 +93,8 @@ img:hover{
 	font-weight: 100;
 	font-style: normal;
 	font-size: 20px;
-	margin-top: 10px;
+	top: 0;
+	
 }
 
 
@@ -909,5 +910,23 @@ select:hover{
   .micro{
 	margin-left: 0.5rem;
   }
-  
+ /* For screens 1000px or smaller */
+@media screen and (max-width: 1000px) {
+	body{
+		background: #434343;
+	}
+	
+	
+	.accord{
+		position: relative;
+		top: 3rem;
+	}
+	.card-text{
+		position: absolute;
+		top: 0;
+	}
+	.accord{
+		top: 5rem;
+	}
+  }
   
