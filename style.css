@@ -367,6 +367,9 @@ button:hover{
   .right-side-nav{
 	visibility: hidden;
   }
+  .h4{
+	visibility: hidden;
+}
    /* For screens 1000px or smaller */
 /* For screens 1009px or smaller */
 @media screen and (max-width: 1009px) {
@@ -397,6 +400,7 @@ button:hover{
         background-color: #ffffff;
         left: 10%;
     }
+	
 }
 
 /* For screens 820px or smaller */
@@ -473,37 +477,38 @@ button:hover{
 		background: #d1006b;
 		color: #fff;
 	}
-}
-
-@media screen and (max-width:405){
-	#greeting {
-		font-size: 16px; /* Reduce font size */
-		font-weight: bold;
-		text-align: center;
-		display: block; /* Prevent inline overlap */
-		margin: 0 auto; /* Center it properly */
-		padding-bottom: 5px;
-	}
-	.card-text {
-		width: 85%; /* Reduce width for better spacing */
-		max-width: 350px; /* Prevent excessive stretching */
-		margin: 1rem auto; /* Center it */
-		padding: 1.2rem; /* Add inner padding */
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.accord {
-		width: 90%;
-		max-width: 300px;
-		margin: 0.5rem auto; /* Center and add spacing */
-		padding: 1rem;
-		text-align: center;
-		font-size: 14px; /* Reduce font size slightly */
-		line-height: 1.5;
-	}
 	
 }
+@media screen and (max-width: 520px) {
+	#greeting {
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		color: #d1006b; /* Adjust to better visibility */
+	}
+	.card-text {
+		width: 80%; /* Adjust width */
+		max-width: 400px; /* Prevent too wide expansion */
+		padding: 1rem; /* Add inner spacing */
+		margin: 1rem auto; /* Center the card */
+	}
+	.accord {
+		background: transparent;
+		border: 1px solid #d1006b; /* Match color */
+		color: #ffffff; /* Ensure text contrast */
+		padding: 0.8rem;
+		text-align: center;
+		border-radius: 8px; /* Soft edges */
+	}
+	.accord:hover {
+		background: #d1006b;
+		color: #fff;
+	}
+}
+
+
+
+
 /* Duplicate query for 758px is removed to avoid conflicts */
 
 /* For screens 690px or smaller */
@@ -634,6 +639,7 @@ select:hover{
 	.music-all-list {
 		margin-left: 0.5rem;
 	}
+	
 }
 
 
