@@ -665,8 +665,7 @@ select:hover{
 .container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-end;
-	align-items: flex-end;
+
 	padding: 20px;
 	margin-left: 400px;
 	overflow: hidden;
@@ -715,18 +714,56 @@ select:hover{
 	height: 100vh;
 	padding: 10px;
 	
-
+	.video-section {
+		display: flex;
+		gap: 10px;
+	  }
+	  
+	  .item {
+		position: relative;
+		display: inline-block;
+	  }
+	  
+	  .video-section video {
+		width: 200px; /* Adjust as needed */
+		cursor: pointer;
+		border-radius: 10px;
+	  }
+	  
+	  .play-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 40px;
+		color: white;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 10px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+	  }
+	  
+	  .item:hover .play-icon {
+		opacity: 1;
+	  }
+	  
 
 	
   }
   
-  .playbtn{
+  /* .playbtn{
 	display: flex;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	background-color: #dd02aa;
-  }
+  } */
   /* [][][][][[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]] *
   /* ///relax* breathe/
   

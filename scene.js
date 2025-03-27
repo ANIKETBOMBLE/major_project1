@@ -1,29 +1,28 @@
-window.addEventListener("load", () => {
-	const preload = document.querySelector(".preload");
-	preload.classList.add("preload-finish");
-  });
-  const videos = document.querySelectorAll(".video");
-  const buttons = document.querySelectorAll(".play-btn");
 
-  buttons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-      if (videos[index].paused) {
-        videos[index].play();
-        button.textContent = "Pause";
-      } else {
-        videos[index].pause();
-        button.textContent = "Play";
-      }
-    });
-  });
-  
-  
- const namespan = document.getElementById("name");
+        document.querySelectorAll(".item").forEach(item => {
+            const video = item.querySelector("video");
+            const playIcon = item.querySelector(".play-icon");
 
-const savedname = localStorage.getItem("username");
-if(savedname){
-	namespan.textContent = savedname;
-}
-namespan.addEventListener("input",()=>{
-	localStorage.setItem("username" , namespan.textContent);
-});
+            item.addEventListener("click", (e) => {
+              e.preventDefault();
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if (video.webkitRequestFullscreen) { // Safari
+                    video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) { // IE11
+                    video.msRequestFullscreen();
+                }
+
+                video.play(); // Auto-play when in fullscreen
+                playIcon.style.display = "none"; // Hide play icon when playing
+            });
+
+            video.addEventListener("pause", () => {
+                playIcon.style.display = "block"; // Show play icon when paused
+            });
+
+            video.addEventListener("play", () => {
+                playIcon.style.display = "none"; // Hide play icon when playing
+            });
+        });
+   
