@@ -133,6 +133,8 @@ img:hover{
 #greeting{
 	color: #d31c87;
 }
+
+
 .main-accodin{
 	display: flex;
 	flex-direction: column;
@@ -356,7 +358,157 @@ button:hover{
 	border-radius: 10px;
 
   }
-  
+  .img-log{
+	visibility: hidden;
+  }
+  .home-card-logo2{
+	visibility: hidden;
+  }
+  .right-side-nav{
+	visibility: hidden;
+  }
+   /* For screens 1000px or smaller */
+/* For screens 1009px or smaller */
+@media screen and (max-width: 1009px) {
+    .index-body {
+        background: #000000;
+    }
+    #name {
+        font-size: 20px;
+        color: #1d7cd5;
+    }
+    .typing {
+        font-size: 20px;
+        left: 20%;
+    }
+    #img-log {
+        visibility: hidden;
+    }
+    .home-card-logo2 {
+        visibility: visible;
+
+    }
+    .accord {
+        position: relative;
+        top: 3rem;
+    }
+    .card-text {
+        width: 50vw;
+        background-color: #ffffff;
+        left: 10%;
+    }
+}
+
+/* For screens 820px or smaller */
+@media screen and (max-width: 820px) {
+	
+	.home-card-logo2 {
+        visibility: visible;
+
+    }
+    .right-side-nav {
+        visibility: visible;
+    }
+    .accord {
+        top: 7rem;
+    }
+    .card-text {
+        width: 50vw;
+        background-color: #ffffff;
+        left: 12%;
+    }
+    #qrcode {
+        visibility: hidden;
+    }
+    #name {
+        font-size: 20px;
+        color: #2589e6;
+    }
+}
+
+/* For screens 750px or smaller */
+@media screen and (max-width: 750px) {
+    .accord {
+        position: relative;
+        top: 10rem;
+    }
+    .card-text {
+        width: 60vw;
+    }
+    .nav {
+        visibility: hidden;
+    }
+    .breath-body, .body-talk{
+        .nav {
+            visibility: visible;
+        }
+    }
+    #name {
+        font-size: 20px;
+        color: #3890e3;
+    }
+}
+@media screen and (max-width:550) {
+	#greeting {
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		color: #d1006b; /* Adjust to better visibility */
+	}
+	.card-text {
+		width: 80%; /* Adjust width */
+		max-width: 400px; /* Prevent too wide expansion */
+		padding: 1rem; /* Add inner spacing */
+		margin: 1rem auto; /* Center the card */
+	}
+	.accord {
+		background: transparent;
+		border: 1px solid #d1006b; /* Match color */
+		color: #ffffff; /* Ensure text contrast */
+		padding: 0.8rem;
+		text-align: center;
+		border-radius: 8px; /* Soft edges */
+	}
+	.accord:hover {
+		background: #d1006b;
+		color: #fff;
+	}
+}
+
+@media screen and (max-width:405){
+	#greeting {
+		font-size: 16px; /* Reduce font size */
+		font-weight: bold;
+		text-align: center;
+		display: block; /* Prevent inline overlap */
+		margin: 0 auto; /* Center it properly */
+		padding-bottom: 5px;
+	}
+	.card-text {
+		width: 85%; /* Reduce width for better spacing */
+		max-width: 350px; /* Prevent excessive stretching */
+		margin: 1rem auto; /* Center it */
+		padding: 1.2rem; /* Add inner padding */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.accord {
+		width: 90%;
+		max-width: 300px;
+		margin: 0.5rem auto; /* Center and add spacing */
+		padding: 1rem;
+		text-align: center;
+		font-size: 14px; /* Reduce font size slightly */
+		line-height: 1.5;
+	}
+	
+}
+/* Duplicate query for 758px is removed to avoid conflicts */
+
+/* For screens 690px or smaller */
+
+  /* ///// */
 
 	/* ------------------ */
 	
@@ -457,15 +609,34 @@ select:hover{
     padding: 20px;
     transition: background 0.5s ease-in-out;
 }
-@media screen and (max-width:1350px){
-	
-	.song-item{
-		margin-left: 5rem;
+@media screen and (max-width: 1350px) {
+	.song-item {
+		margin-left: 4rem;
 	}
-	.music-all-list{
+	.music-all-list {
 		margin-left: 6rem;
 	}
 }
+
+@media screen and (max-width: 640px) { /* Tablet size */
+	.song-item {
+		margin-left: 2rem;
+	}
+	.music-all-list {
+		margin-left: 3rem;
+	}
+}
+
+@media screen and (max-width: 460px) { /* Mobile */
+	.song-item {
+		margin-left: 1rem;
+	}
+	.music-all-list {
+		margin-left: 0.5rem;
+	}
+}
+
+
 
 
 #name{
@@ -925,135 +1096,10 @@ select:hover{
   .right-side-nav{
 	visibility: hidden;
   }
- /* For screens 1000px or smaller */
-@media screen and (max-width: 1009px) {
-	.index-body{
-		background: #000000;
-	
-	}
-	#name{
-		font-size: 20px;
-		color: #1d7cd5;
-		/* text-align: end; */
-	}
-	.typing{
-		font-size: 20px;
-		left: 20%;
-	}
-	#img-log{
-		visibility: hidden;
-	}
-	.home-card-logo2{
-		visibility:visible;
-	}
-	
-	.accord{
-		position: relative;
-		top: 3rem;
-	}
-		.card-text{
-			width: 50vw;
-			background-color: #ffffff;
-			left: 10%;
-		
-		}
-		
-	}
-	
-  
-  @media screen and (max-width: 820px) {
-	
-	.right-side-nav{
-		visibility: visible;
-	}
-	
-	.accord{
-		top: 7rem;
-	}
-	
-	.card-text{
-		width: 50vw;
-		background-color: #ffffff;
-		left: 12%;
-	}
-	#qrcode{
-		visibility: hidden;
-	}
-	#name{
-		font-size: 20px;
-		color: #2589e6;
-	}
-	
-  }
-  
-  @media screen and (max-width: 750px){
-	.accord{
-		position: relative;
-		top: 10rem;
-	}
-	.card-text{
-		width: 60vw;
-  }
-  .nav{
-	visibility: hidden;
-  }
-  .breath-body , .body-talk{
-	.nav{
-		visibility: visible;
-	  }
-  }
-  #name{
-	font-size: 20px;
-	color: #3890e3;
-}
-}
-@media screen and (max-width: 758px){
-	.card-text{
-		width: 40vw;
-	}
-	#greeting{
-		font-size: 20px;
-	}
-	#name{
-		font-size: 20px;
-		color: #3793ea;
-	}
-	.typing{
-		font-size: 20px;
-		left: 10%;
-	}
-}
 
-@media screen and (max-width: 690px)
-{
-	.typing{
-		font-size: 20px;
-		margin-left:30% ;
-		
-	}
-	.card-text{
-		left: 15%;
-	}
-	#greeting{
-		font-size: 18px;
-	}
-}
-
-@media screen and (max-width:650) {
-	.card-text{
-		top: 30%;
-	}
-	.accord{
-		top: 5rem;
-	}
-	.home-card-logo2{
-		background: #2589e6;
-	}
-}
-
-/* scene media query */
+/* scene media query
 @media screen and (max-width:1320px) {
 	.item{
-		flex-wrap: wrap-reverse;
+		flex-wrap: ;
 	}
-}
+} */
