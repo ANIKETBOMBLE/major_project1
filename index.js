@@ -86,7 +86,7 @@ close.addEventListener("click", (e) => {
 
 //QR code you can scan and watch
 
-const websiteURL = "http://127.0.0.1:5500/index.html"; // Change this to your target website
+const websiteURL = "https://major-project1-phi.vercel.app/index.html"; // Change this to your target website
 
 // Generate QR Code
 new QRCode(document.getElementById("qrcode"), {
