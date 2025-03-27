@@ -442,10 +442,10 @@ button:hover{
     .nav {
         visibility: hidden;
     }
-    .breath-body, .body-talk{
+    .breath-body, .body-talk ,.music-body ,.body-scene{
         .nav {
             visibility: visible;
-        }
+		}
     }
     #name {
         font-size: 20px;
@@ -479,7 +479,7 @@ button:hover{
 	}
 	
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 500px) {
 	#greeting {
 		font-size: 18px;
 		font-weight: bold;
