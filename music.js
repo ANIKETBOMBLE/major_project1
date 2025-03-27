@@ -47,13 +47,7 @@ const mainDivContainer = document.querySelector(".main-div-container");
 function updateSongs(category) {
     songContainer.innerHTML = ""; // Clear previous songs
 
-    // Update background image
-    // if (categoryBackgrounds[category]) {
-    //     mainDivContainer.style.backgroundImage = `url(${categoryBackgrounds[category]})`;
-    //     mainDivContainer.style.backgroundSize = "cover";
-    //     mainDivContainer.style.backgroundPosition = "center";
-    //     mainDivContainer.style.transition = "background 0.5s ease-in-out";
-    // }
+ 
 
     if (songs[category]) {
         songs[category].forEach(song => {
@@ -80,9 +74,21 @@ function updateSongs(category) {
             songDiv.appendChild(songTitle);
             songDiv.appendChild(audio);
             songContainer.appendChild(songDiv);
+			
+		
         });
+		// audio.forEach(player =>{
+		// 	player.addEventListener('play' ,()=>{
+		// 		audio.forEach(otherplayer =>{
+		// 			if(otherplayer !== player){
+		// 				otherplayer.pasue();
+		// 			}
+		// 		})
+		// 	})
+		// })
     }
 }
+
 
 // Event listener for dropdown change
 musicCategory.addEventListener("change", function () {
@@ -95,7 +101,7 @@ updateSongs("nature");
 
 
 // 
-       //
+       //.
 const namespan = document.getElementById("name");
 
 const savedname = localStorage.getItem("username");
@@ -105,6 +111,8 @@ if(savedname){
 namespan.addEventListener("input",()=>{
 	localStorage.setItem("username" , namespan.textContent);
 });
+
+
 
 // const apikey = "cdk6w4OMejFvGpMnBcECshp39ENB-0nDlXZ3eVRi5Ds";
 // const count = 10;
